@@ -209,6 +209,7 @@ name: template_slide
 .left-column[
 - Monitors the real power consumption of appliance
 - Precise measurements of magnitude voltage and current
+- Numerical integration techniques combined with linear approximation for greater accuracy
 - Minimal effect on appliance operation while monitoring
 - Built-in display
 - Bluetooth output
@@ -223,11 +224,11 @@ name: template_slide
 # Hardware Features
 
 .left-column[
-- Compact SMT design (59mm x 121mm incl. display)
+- Compact SMT design (59mm x 121mm incl. display) for portability
 - Regulated 5v power supply
-- Differential inputs
-- Second-order filter ADC inputs
-- Contiguous ground plane
+- Differential inputs to ensure signal fidelity
+- Second-order filter ADC inputs to reduce noise
+- Contiguous ground plane for EMI shielding
 ]
 
 .right-column[
@@ -242,10 +243,11 @@ Front&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 # Software Features
 
 .left-column[
-- On-board ATmega328PB
-- External clock crystal
-- 10-bit ADC for voltage and current measurement
+- On-board ATmega328PB for smaller form factor and lower cost
+- External clock crystal for flexibility: can use lower clock speed for reduced power consumption
+- 10-bit ADC for precise voltage and current measurement
 - Outputs power consumption to display and BLE module via UART
+- Modular software development practices
 ]
 
 .right-column[
